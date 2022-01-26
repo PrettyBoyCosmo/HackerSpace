@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<!-- head -->
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>HackerSpace</title>
+    <link href="/style.css" rel="stylesheet" type="text/css" />
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Roboto+Mono:ital@1&display=swap" rel="stylesheet">
+</head>
+
+<!-- main body -->
+
+<body>
+    <!-- hs image heading -->
+    <center><img src="/assets/hackerspace.png" width="160" height="90"></center>
+
+    <!-- navbar -->
+
+    <ul class="navbar">
+        <li class="navlist"><a class="active" href="/index.html">Home</a></li>
+        <li class="navlist"><a href="/tools/usb-rubberducky.html">USB RubberDucky</a></li>
+        <li class="navlist"><a href="/tools/bash-bunny.html">BashBunny</a></li>
+        <li class="navlist"><a href="/tools/wifi-pineapple.html">Wi-Fi Pineapple</a></li>
+        <li class="navlist"><a href="/tools/duckyscript.html">DuckyScript</a></li>
+        <li class="navlist"><a href="/tools/bunnyscript.html">BunnyScript</a></li>
+        <li class="navlist"><a href="/about-me.html">About Me</a></li>
+    </ul>
+
+    <!-- welcome -->
+    <center>
+        <!-- <iframe width="1000" height="600" src="https://www.youtube.com/embed/uHIZZYFeVJA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+
+        <img id="logo" src="/assets/hackerspace.png" width="1000" height="600">
+
+        <!-- <a href="/about-me.html"><button type="button">Click Me!</button></a> -->
+
+        <h2>Hey Hacker!</h2>
+        <p>Welcome to HackerSpace! A specialized documentation website for Hak5 and their gear. Each page will provide you with information on how to purchase, set up, use, and develop payloads for the device. HackerSpace is partnered with Cosmodium CyberSecurity, to provide you with digital resources for your Hak5 gear needs.</p>
+
+    </center>
+
+    <!-- photo gallery -->
+    <center>
+        <h2>Our Selection</h2>
+
+        <p>HackerSpace features plenty of documentation for Hak5 tools and gear. Below we have a slide show where you can click any tool that you may need documentation on. Whether it is a tutorial, instructions, or general documentation on the device at hand. HackerSpace is continuously updating it resources to provide you with the latest documentation for your Hak5 needs!</p>
+    </center>
+
+    <!-- Slideshow container -->
+    <div class="slideshow-container">
+
+        <!-- Full-width images with number and caption text -->
+        <!-- usb-rubberducky -->
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <a href="/tools/usb-rubberducky.html">
+                <center><img src="/assets/usb-rubberducky.jpg" height="400" width="325"></center>
+                <div class="text">USB RubberDucky</div>
+            </a>
+        </div>
+
+        <!-- bash-bunny -->
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <a href="/tools/bash-bunny.html">
+                <center><img src="/assets/bash-bunny.jpg" height="400" width="400"></center>
+                <div class="text">Bash Bunny</div>
+            </a>
+        </div>
+
+        <!-- wifi-pineapple -->
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <a href="/tools/wifi-pineapple.html">
+                <center><img src="/assets/wifi-pineapple.jpg" height="400" width="400"></center>
+                <div class="text">Wi-Fi Pineapple</div>
+            </a>
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+    <script src="slides.js"></script>
+
+    <center>
+        <h2>Our Partner</h2>
+        <p>Our partner, Cosmodium CyberSecurity, is a security education company that works to teach and educate the general public on cybersecurity topics. They have worked closely with Hak5 in the past through interviews, seminars, and promoting their products. As they continue to grow, CosmodiumCS has provided us with their teaching material in order to properly introduce this introductory information to you.</p>
+
+        <!-- yt -->
+        <a href="https://youtube.com/cosmodiumcs" target="_blank"><img src="/assets/youtube.png" width="100" height="75"></a>
+
+        <!-- hak5 -->
+        <a href="https://hak5.org" target="_blank"><img src="/assets/hak5.png"></a>
+
+        <!-- ccs -->
+        <a href="https://cosmodiumcs.com" target="_blank"><img src="/assets/ccs.png" width="100" height="100"></a>
+
+    </center>
+</body>
+
+</html>

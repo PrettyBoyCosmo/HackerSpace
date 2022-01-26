@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <!-- add device name -->
+    <title>DuckyScript | HackerSpace</title>
+    <link href="/style.css" rel="stylesheet" type="text/css" />
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Roboto+Mono:ital@1&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- hs image heading -->
+    <center><img src="/assets/hackerspace.png" width="160" height="90"></center>
+
+    <!-- navbar -->
+    <ul class="navbar">
+        <li class="navlist"><a href="/index.html">Home</a></li>
+        <li class="navlist"><a href="/tools/usb-rubberducky.html">USB RubberDucky</a></li>
+        <li class="navlist"><a href="/tools/bash-bunny.html">BashBunny</a></li>
+        <li class="navlist"><a href="/tools/wifi-pineapple.html">Wi-Fi Pineapple</a></li>
+        <li class="navlist"><a class="active" href="/tools/duckyscript.html">DuckyScript</a></li>
+        <li class="navlist"><a href="/tools/bunnyscript.html">BunnyScript</a></li>
+        <li class="navlist"><a href="/about-me.html">About Me</a></li>
+    </ul>
+
+    <!-- welcome -->
+    <center>
+        <h1 id="usbrubberduckysyntax">USB Rubber Ducky Syntax</h1>
+        <ul>
+            <li class="syntax">BASIC based</li>
+
+            <li class="syntax">commands are in all caps</li>
+
+            <li class="syntax">attributes are lowercase</li>
+
+            <li class="syntax">Delays are measured in milliseconds, 1 second = 1000 milliseconds</li>
+        </ul>
+
+        <h2 id="rem">REM</h2>
+
+        <ul>
+            <li class="syntax">remark or comment, attributes are not processed</li>
+        </ul>
+
+        <pre><code>REM this will not be ran
+STRING this will be typed
+</code></pre>
+
+        <h2 id="default_delaydefaultdelay">DEFAULT_DELAY | DEFAULTDELAY</h2>
+
+        <ul>
+            <li class="syntax">creates a default delay between commands</li>
+        </ul>
+
+        <pre><code>REM there will be a one second delay between commands
+DEFAULT_DELAY 1000
+GUI r
+STRING notepad
+</code></pre>
+
+        <h2 id="delay">DELAY</h2>
+
+        <ul>
+            <li class="syntax">creates a single delay</li>
+        </ul>
+
+        <pre><code>REM this will delay for one second
+DELAY 1000
+GUI r
+
+REM this will delay for half a second
+DELAY 500
+STRING notepad
+</code></pre>
+
+        <h2 id="string">STRING</h2>
+
+        <ul>
+            <li class="syntax">inputs text</li>
+        </ul>
+
+        <pre><code>REM this will type 'Hello, World!'
+STRING Hello, World!
+</code></pre>
+
+        <h2 id="guiwindows">GUI | WINDOWS</h2>
+
+        <ul>
+            <li class="syntax">acts as the special key [windows key]</li>
+        </ul>
+
+        <pre><code>REM this will lock your screen
+GUI l
+</code></pre>
+
+        <h2 id="menuapp">MENU | APP</h2>
+
+        <ul>
+            <li class="syntax">right click</li>
+        </ul>
+
+        <pre><code>REM this will paste the users clipboard
+MENU
+STRING p
+</code></pre>
+
+        <h2 id="shift">SHIFT</h2>
+
+        <ul>
+            <li class="syntax">holds down 'shift' key along with any selected key</li>
+        </ul>
+
+        <pre><code>REM this will paste the users clipboard
+SHIFT INSERT
+</code></pre>
+
+        <h2 id="alt">ALT</h2>
+
+        <ul>
+            <li class="syntax">holds down 'alt' key along with any selected key</li>
+        </ul>
+
+        <pre><code>REM this will close the open window
+ALT F4
+</code></pre>
+
+        <h2 id="controlctrl">CONTROL | CTRL</h2>
+
+        <ul>
+            <li class="syntax">holds down 'control' key along with any selected key</li>
+        </ul>
+
+        <pre><code>REM this will select all and add content to clipboard
+CTRL a
+CONTROL c
+</code></pre>
+
+        <h2 id="arrowkeys">ARROW KEYS</h2>
+
+        <ul>
+            <li class="syntax">each direction hits each respective arrow key</li>
+        </ul>
+
+        <pre><code>REM 'DOWNARROW' or 'DOWN' will hit the down arrow
+REM 'UPARROW' or 'UP' will hit the up arrow
+REM 'LEFTARROW' or 'LEFT' will hit the left arrow
+REM 'RIGHTARROW' or 'RIGHT' will hit the right arrow
+</code></pre>
+
+        <h2 id="othercommands">OTHER COMMANDS</h2>
+
+        <pre><code>REM 'BREAK' or 'PAUSE' will hit pause
+REM 'CAPSLOCK' will hit the 'caps lock' key
+REM 'DELETE' will hit the 'delete' key
+REM 'END' will hit the 'end' key
+REM 'ESC' or 'ESCAPE' will hit the 'escape' key
+REM 'HOME' will hit the 'home' key
+REM 'INSERT' will hit the 'insert' key
+REM 'NUMLOCK' will hit the 'num lock' key
+REM 'PAGEUP' will hit the 'page up' key
+REM 'PAGEDOWN' will hit the 'page down' key
+REM 'PRINTSCREEN' will hit the 'print screen' key
+REM 'SCROLLOCK' will hit the 'scroll lock' key
+REM 'SPACE' will hit the 'space' bar
+REM 'TAB' will hit the 'tab' key
+</code></pre>
+
+    </center>
+
+</body>
+
+</html>

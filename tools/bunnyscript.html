@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+<!-- head -->
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>HackerSpace</title>
+    <link href="/style.css" rel="stylesheet" type="text/css" />
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Roboto+Mono:ital@1&display=swap" rel="stylesheet">
+</head>
+
+<!-- main body -->
+
+<body>
+    <!-- hs image heading -->
+    <center><img src="/assets/hackerspace.png" width="160" height="90"></center>
+
+    <!-- navbar -->
+
+    <ul class="navbar">
+        <li class="navlist"><a href="/index.html">Home</a></li>
+        <li class="navlist"><a href="/tools/usb-rubberducky.html">USB RubberDucky</a></li>
+        <li class="navlist"><a href="/tools/bash-bunny.html">BashBunny</a></li>
+        <li class="navlist"><a href="/tools/wifi-pineapple.html">Wi-Fi Pineapple</a></li>
+        <li class="navlist"><a href="/tools/duckyscript.html">DuckyScript</a></li>
+        <li class="navlist"><a class="active" href="/tools/bunnyscript.html">BunnyScript</a></li>
+        <li class="navlist"><a href="/about-me.html">About Me</a></li>
+    </ul>
+
+    <center>
+        <h1 id="bunnyscript">Bunny Script</h1>
+
+        <ul>
+            <li class="syntax">uses <em>DuckyScript</em> [a language originally designed for the USB Rubber Ducky] as well as <em>BunnyScript</em></li>
+            <li class="syntax">payloads are saved to a <em>payload.txt</em> file</li>
+
+            <li class="syntax"><a href="https://github.com/hak5/bashbunny-payloads" target="_blank">communtiy payloads</a></li>
+
+            <li class="syntax">coupled with BASH</li>
+        </ul>
+
+        <p>payload header</p>
+
+        <pre><code># Title:          XXX
+# Description:    XXX
+# Author:         XXX
+# Category:       XXX
+# Target:         XXX
+# Attackmodes:    XXX
+</code></pre>
+
+        <h2 id="attackmode">ATTACKMODE</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Emulation</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>SERIAL</td>
+                    <td>enables serial console</td>
+                </tr>
+                <tr>
+                    <td>ECM_ETHERNET</td>
+                    <td>enables ethernet control model [ecm] for linux, mac and android</td>
+                </tr>
+                <tr>
+                    <td>RNDIS_ETHERNET</td>
+                    <td>enables remote network driver interface specification [rndis] for windows</td>
+                </tr>
+                <tr>
+                    <td>STORAGE</td>
+                    <td>enables mass storage</td>
+                </tr>
+                <tr>
+                    <td>RO_STORAGE</td>
+                    <td>enables read only [om] storage</td>
+                </tr>
+                <tr>
+                    <td>HID</td>
+                    <td>enables keyboard mode for keystroke injection</td>
+                </tr>
+                <tr>
+                    <td>OFF</td>
+                    <td>turns off emulation</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2 id="arguments">Arguments:</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Arguments</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>SN_XX</td>
+                    <td>set serial number to <em>XX</em></td>
+                </tr>
+                <tr>
+                    <td>MAN_XX</td>
+                    <td>set device manufacturer to <em>XX</em></td>
+                </tr>
+                <tr>
+                    <td>VID_XX</td>
+                    <td>spoof vendor ID as <em>XX</em></td>
+                </tr>
+                <tr>
+                    <td>PID_XX</td>
+                    <td>spoof product ID as <em>XX</em></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2 id="led">LED</h2>
+
+        <p>change LED color</p>
+
+        <h3 id="colors">Colors:</h3>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Letter</th>
+                    <th>Color</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>R</td>
+                    <td>Red</td>
+                </tr>
+                <tr>
+                    <td>G</td>
+                    <td>Green</td>
+                </tr>
+                <tr>
+                    <td>B</td>
+                    <td>Blue</td>
+                </tr>
+                <tr>
+                    <td>Y</td>
+                    <td>Yellow</td>
+                </tr>
+                <tr>
+                    <td>C</td>
+                    <td>Cyan</td>
+                </tr>
+                <tr>
+                    <td>M</td>
+                    <td>Magenta</td>
+                </tr>
+                <tr>
+                    <td>W</td>
+                    <td>White</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3 id="paterns">Paterns:</h3>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Command</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>SOLID</td>
+                    <td>LED turns on</td>
+                </tr>
+                <tr>
+                    <td>SLOW</td>
+                    <td>1000ms on/off</td>
+                </tr>
+                <tr>
+                    <td>FAST</td>
+                    <td>100ms on/off</td>
+                </tr>
+                <tr>
+                    <td>VERYFAST</td>
+                    <td>10ms on/off</td>
+                </tr>
+                <tr>
+                    <td>SINGLE</td>
+                    <td>1 100ms on, 1000ms off</td>
+                </tr>
+                <tr>
+                    <td>DOUBLE</td>
+                    <td>2 100ms on, 1000ms off</td>
+                </tr>
+                <tr>
+                    <td>TRIPLE</td>
+                    <td>3 100ms on, 1000ms off</td>
+                </tr>
+                <tr>
+                    <td>QUAD</td>
+                    <td>4 100ms on, 1000ms off</td>
+                </tr>
+                <tr>
+                    <td>QUIN</td>
+                    <td>5 100ms on, 1000ms off</td>
+                </tr>
+                <tr>
+                    <td>SUCCESS</td>
+                    <td>1000ms VERYFAST, SOLID</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3 id="ledstate">LED State:</h3>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>STATE</th>
+                    <th>DESCRIPTION</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>SETUP</td>
+                    <td>Magenta [solid]</td>
+                </tr>
+                <tr>
+                    <td>FAIL[1-5]</td>
+                    <td>Red [slow blink - very fast blink]</td>
+                </tr>
+                <tr>
+                    <td>ATTACK</td>
+                    <td>Yellow [single blink]</td>
+                </tr>
+                <tr>
+                    <td>STAGE[1-5]</td>
+                    <td>Yellow [single blink - quintuple blink]</td>
+                </tr>
+                <tr>
+                    <td>CLEANUP</td>
+                    <td>White [fast blink]</td>
+                </tr>
+                <tr>
+                    <td>FINISH</td>
+                    <td>Green [1000ms VERYFAST, SOLID]</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2 id="quackq">QUACK | Q</h2>
+
+        <p>run duckysrcript file or command</p>
+
+        <pre><code>QUACK GUI r
+</code></pre>
+
+        <h2 id="ducky_lang">DUCKY_LANG</h2>
+
+        <p>set keyboard language</p>
+
+        <pre><code>DUCKY_LANG us
+</code></pre>
+
+        <h2 id="run">RUN</h2>
+
+        <p>a cross platform keystroke injection shortcut</p>
+
+        <pre><code>RUN WIN Notepad.exe
+</code></pre>
+
+        <h2 id="get">GET</h2>
+
+        <p>obtain system variables</p>
+
+        <pre><code>GET SWITCH_POSITION
+</code></pre>
+
+        <ul>
+            <li class="syntax">this gets the current switch position of the onboard switch of the bash bunny</li>
+        </ul>
+
+        <h2 id="requiretool">REQUIRETOOL</h2>
+
+        <p>terminates payload if tool is not found in <em>/tools</em></p>
+
+        <pre><code>REQUIRETOOL impacket
+</code></pre>
+
+        <h2 id="wait_for_presentmkii">WAIT<em>FOR</em>PRESENT [MkII]</h2>
+
+        <p>pauses payload until a a bluetooth id is detected</p>
+
+        <pre><code>WAIT_FOR_PRESENT XXX
+</code></pre>
+
+        <h2 id="wait_for_not_presentmkii">WAIT<em>FOR</em>NOT_PRESENT [MkII]</h2>
+
+        <p>pauses payload until a a bluetooth id is NOT detected</p>
+
+        <pre><code>WAIT_FOR_NOT_PRESENT XXX
+</code></pre>
+
+    </center>
+</body>
+
+</html>
